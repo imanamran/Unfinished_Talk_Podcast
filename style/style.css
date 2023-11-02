@@ -1,0 +1,439 @@
+@media only screen and (max-width: 768px) {
+  .player .wrapper{
+    z-index: 1;
+    max-width: 330px;
+    padding: 20px 20px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    background: var(--white);
+    box-shadow: 0px 6px 15px var(--lightbshadow);
+    }
+
+  .img-area{
+    width: 334px;
+    height: 334px;
+    overflow: hidden;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px var(--lightbshadow);
+  }
+
+  body {
+    margin: 0 0 100px 0;
+  }
+
+  .nav {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    width:  100%;
+    height: 55px;
+    box-shadow:  0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  .nav__link {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow:  1;
+    min-width: 50px;
+    overflow:  hidden;
+    white-space:  nowrap;
+    font-family:  sans-serif;
+    font-size:  13px;
+    color: #989898;
+    text-decoration: none;
+    -webkit-tap-highlight-color:  tranparent;
+    transition: background-color 0.1s ease-in-out;
+  }
+
+  .nav__link:hover {
+    background-color: lightgray;
+  }
+
+  header{
+    -webkit-box-shadow:0px 1px 1px lightgray;
+    -moz-box-shadow:0px 1px 1px lightgray;
+    box-shadow:0px 1px 1px lightgray;
+    }
+
+  h1 {
+    font-family: Didot;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  span + p {
+    margin-bottom: 25px;
+  }
+
+  h3{
+    font-family: helvetica;
+  }
+
+  hr{
+    margin-top: -13px;
+  }
+
+  h4{
+    margin-top: 0px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size:  16px;
+  }
+
+
+  a:link, a:visited, a:hover, a:active { text-decoration: none; }
+
+  a.list_episode:link, a.list_episode:visited,
+  a.index_episode:link, a.index_episode:visited{
+    opacity: 0.9;
+    cursor: pointer;
+    color: black;
+  }
+
+  a.list_episode:hover, a.list_episode:active,
+  a.index_episode:hover, a.index_episode:active{
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.25) inset;
+  -moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.25) inset;
+  }
+
+  .index_episode{
+    border-radius: 25px;
+    background: rgb(245,245,245);
+    padding: 20px; 
+    width: 110px;
+    height: 110px;
+    box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+
+  .outside_episode{
+    display: inline-flex;
+  }
+  
+
+  .list_episode{
+    border-radius: 25px;
+    background: rgb(245,245,245);
+    padding: 20px; 
+    width: 333px;
+    height: 110px;
+    box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+  }
+
+  a.list_episode img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .img-episode{
+    overflow: hidden;
+    margin: -5px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px var(--lightbshadow);
+
+  }
+
+  .list_episode p{
+    margin-top: -30px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h5{
+      margin-top: 0px;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+      font-size:  20px;
+  }
+
+  section.list_for_ep{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .player .wrapper{
+  z-index: 1;
+  max-width: 390px;
+  padding: 20px 20px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  background: var(--white);
+  box-shadow: 0px 6px 15px var(--lightbshadow);
+}
+
+  nav{
+    margin: 0;
+  }
+
+  section.player{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  section.list_for_ep{
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-area{
+    max-width: 390px;
+    max-height: 390px;
+    overflow: hidden;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px var(--lightbshadow);
+  }
+
+  h1{
+    font-family: Didot;
+    font-size: 90px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 10px;
+    text-align: center;
+  }
+
+  .nav__link {
+    font-family: Helvetica;
+    font-size:  20px;
+    color: #989898;
+    text-decoration: none;
+    margin: 50px;
+  }
+
+  .nav__text{
+    display: inline;
+  }
+
+  .child {
+    margin: 15px auto;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: -7px;
+  }
+
+  a:link, a:visited, a:hover, a:active { text-decoration: none; }
+
+  a.list_episode:link, a.list_episode:visited,
+  a.index_episode:link, a.index_episode:visited{
+    opacity: 0.9;
+    cursor: pointer;
+    color: black;
+  }
+
+  a.list_episode:hover, a.list_episode:active,
+  a.index_episode:hover, a.index_episode:active{
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.25) inset;
+  -moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.25) inset;
+  }
+
+
+  span + p {
+    margin-bottom: 25px;
+  }
+
+  h3{
+    font-family: helvetica;
+  }
+
+  h4{
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size:  30px;
+  }
+    a:hover{
+    color: black;
+  }
+
+  .index_episode{
+    border-radius: 25px;
+    background: rgb(245,245,245);
+    padding: 20px; 
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    margin-right: 40px;
+  }
+
+  .outside_episode{
+    display: inline-flex;
+  }
+
+  .list_for_ep{
+  margin-top: 30px;
+  }
+
+  .list_episode{
+    border-radius: 25px;
+    background: rgb(245,245,245);
+    padding: 20px; 
+    width: 503px;
+    height: 110px;
+    box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px -1px 14px 1px rgba(0,0,0,0.4);
+    margin-right: 40px;
+  }
+  section.list_for_ep{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  a.list_episode img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .img-episode{
+    overflow: hidden;
+    margin: -5px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px var(--lightbshadow);
+
+  }
+
+  .list_for_ep a.list_episode p{
+    margin-top: -20px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h5{
+      margin-top: 0px;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+      font-size:  20px;
+  }
+}
+
+section{
+  margin: 0 20px;
+}
+
+p.desc{
+  margin-bottom: 100px;
+}
+
+h2{
+  font-size: 30px;
+  margin-bottom: -24px;
+}
+
+.r1 {
+  height: 5px;
+  width: 20px;
+  background-color: #d33453;
+  display: inline-block;
+}
+
+.r2 {
+  height: 5px;
+  width: 20px;
+  background-color: #b0030b;
+  display: inline-block;
+}
+
+.r3 {
+  height: 5px;
+  width: 20px;
+  background-color: #f6ba31;
+  display: inline-block;
+}
+
+.r4 {
+  height: 5px;
+  width: 20px;
+  background-color: #081a85;
+  display: inline-block;
+}
+
+.r5 {
+  height: 5px;
+  width: 20px;
+  background-color: #376333;
+  display: inline-block;
+}
+
+.r6 {
+  height: 5px;
+  width: 20px;
+  background-color: #6b2786;
+  display: inline-block;
+}
+
+.r7 {
+  height: 5px;
+  width: 20px;
+  background-color: #f88c35;
+  display: inline-block;
+}
+
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+div span{
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav__link--active{
+  color: black;
+}
+
+footer h5{
+  margin-top: 20px;
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer{
+  margin-top:50px;
+}
+
